@@ -2,15 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Core",
-    "\\Infrastructure",
-    "\\Infrastructure\\ETicaretAPI.Infrastructure",
-    "\\Infrastructure\\ETicaretAPI.Infrastructure\\bin",
-    "\\Infrastructure\\ETicaretAPI.Infrastructure\\Filters",
-    "\\Infrastructure\\ETicaretAPI.Persistence",
-    "\\Infrastructure\\ETicaretAPI.Persistence\\Migrations",
-    "\\Presentation",
-    "\\Presentation\\ETicaretAPI.API"
+    "\\Core\\ETicaretAPI.Application",
+    "\\Core\\ETicaretAPI.Application\\RequestParameters"
   ],
-  "SelectedNode": "\\Presentation\\ETicaretAPI.API\\appsettings.json",
+  "SelectedNode": "\\ETicaretAPI.sln",
   "PreviewInSolutionExplorer": false
 }

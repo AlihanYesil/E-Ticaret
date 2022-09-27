@@ -13,6 +13,8 @@ import {
   Position,
 } from 'src/app/services/admin/alertify.service';
 import { ProductService } from 'src/app/services/common/models/product.service';
+declare var $: any;
+
 
 @Component({
   selector: 'app-list',
@@ -34,6 +36,8 @@ export class ListComponent extends BaseComponent implements OnInit {
     'price',
     'createdDate',
     'updatedDate',
+    'delete',
+    'edit'
   ];
   dataSource: MatTableDataSource<List_Products> = null;
   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -57,6 +61,9 @@ export class ListComponent extends BaseComponent implements OnInit {
     );
     this.paginator.length = allProducts.totalCount;
   }
+
+ 
+
   async pageChanged() {
     await this.getProducts();
   }

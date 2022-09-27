@@ -9,6 +9,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { BaseComponent } from './base/base.component';
 import {HttpClientModule } from '@angular/common/http';
+import { DeleteDirective } from './directives/admin/delete.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,7 @@ import {HttpClientModule } from '@angular/common/http';
     HttpClientModule
   ],
   providers: [
-    {provide:"baseUrl",useValue:"https://localhost:7234/api",multi:true}
+    {provide:"baseUrl",useValue:"https://localhost:44377/api",multi:true}
   ],
   bootstrap: [AppComponent]
 })
